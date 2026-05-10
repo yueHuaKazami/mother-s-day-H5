@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f9cbd5" />
+    <title>母亲节快乐</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card" id="card" aria-label="母亲节贺卡，轻点屏幕播放祝福动画">
+      <audio id="bgMusic" src="assets/song.mp3" autoplay loop preload="auto"></audio>
+      <button class="music-toggle is-muted" id="musicToggle" type="button" aria-label="播放背景音乐" aria-pressed="false">
+        <span class="music-note" aria-hidden="true">🎵</span>
+      </button>
+
+      <div class="ambient ambient-top"></div>
+      <div class="ambient ambient-bottom"></div>
+      <div class="top-decor" aria-hidden="true">
+        <span class="spark spark-1"></span>
+        <span class="spark spark-2"></span>
+        <span class="spark spark-3"></span>
+        <span class="spark spark-4"></span>
+        <span class="spark spark-5"></span>
+        <span class="spark spark-6"></span>
+      </div>
+      <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+
+      <div class="prompt" id="prompt">轻点屏幕</div>
+
+      <section class="blessing" id="blessing" aria-live="polite" aria-hidden="true">
+        母亲节快乐
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
